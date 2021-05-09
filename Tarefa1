@@ -1,12 +1,12 @@
 TAREFA 1 
 
 1)	Import mpi_national.csv
-2)	Change the order of the “ISO” and “Country” variables. Meaning, make country the first column and ISSO the second column (note: this does not require you to edit the actual csv file)
-3)	Allocate the correct number of bytes for all variables
-4)	Correctly denote if a variable is character or numeric
-5)	Create a new variable that finds the difference between MPI Urban and MPI Rural
-6)	I want you to replace the ‘NIG’ ISSO variable value for Nigeria and change it to: ‘NGA’
-7)	I want the ISSO/Country values to be brought together and be separated by a comma (ie Serbia, SRB). You can call the variable that stories this ‘together’
+2)	Change the order of the “ISO” and “Country” variables. Meaning, make country the first column and ISSO the second column (note: this does not require you to edit the actual csv file).
+3)	Allocate the correct number of bytes for all variables.
+4)	Correctly denote if a variable is character or numeric.
+5)	Create a new variable that finds the difference between MPI Urban and MPI Rural.
+6)	I want you to replace the ‘NIG’ ISSO variable value for Nigeria and change it to: ‘NGA’.
+7)	I want the ISSO/Country values to be brought together and be separated by a comma (ie Serbia, SRB). You can call the variable that stories this ‘together’.
 8)	I only want you to print/display a subset of the data when Intensity of Deprivation Rural is equal too r greater than 40.0
 
 
