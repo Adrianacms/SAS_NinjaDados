@@ -1,5 +1,15 @@
 TAREFA 1 
 
+1)	Import mpi_national.csv
+2)	Change the order of the “ISO” and “Country” variables. Meaning, make country the first column and ISSO the second column (note: this does not require you to edit the actual csv file)
+3)	Allocate the correct number of bytes for all variables
+4)	Correctly denote if a variable is character or numeric
+5)	Create a new variable that finds the difference between MPI Urban and MPI Rural
+6)	I want you to replace the ‘NIG’ ISSO variable value for Nigeria and change it to: ‘NGA’
+7)	I want the ISSO/Country values to be brought together and be separated by a comma (ie Serbia, SRB). You can call the variable that stories this ‘together’
+8)	I only want you to print/display a subset of the data when Intensity of Deprivation Rural is equal too r greater than 40.0
+
+
 data assignment1solution;
 length country $50 ISO $3 mpiurban 8 headcountU 8 IDU 8 mpirural 8 headcountR 8 IDR 8;
 infile "C:\Users\Adriana\Documents\WPS Workspaces\Workspace1\sasprojectem1.sas\MPI_national.csv" DSD MISSOVER FIRSTOBS=2;
@@ -18,22 +28,3 @@ if IDR=>40.0;
 run;
 
 
-
-TAREFA 2 
-
-data assignment2solution;
-length name $35 jobtitles $20 dep $20 fullorpart $14 salorhour $10 typicalh 3 annuals $20 hourlyr $25;
-infile "C:\Users\Adriana\Documents\WPS Workspaces\Workspace1\sasprojectem1.sas\Current_Employee_Names__Salaries__and_Position_Titles.csv" DSD MISSOVER FIRSTOBS=2;
-input name$ jobtitles$ dep$ fullorpart$ salorhour$ typicalh annuals$ hourlyr$;
-annualsnum = input(annuals, comma11.);
-hourlyrnum = input(hourlyr, comma9.);
-salorhourly = coalesce(annualsnum, hourlyrnum);
-run;
-
-proc contents data=assignment2solution;
-run;
-
-proc print data=assignment2solution(where=(hourlyrnum=>50));
-var name hourlyrnum;
-format hourlyrnum dollar11.2;
-run;
