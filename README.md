@@ -15,5 +15,7 @@ Há também várias seções cobrindo proc sql. Esta é a implementação SAS do
 
 Há também seções na programação de índices e macro.
 
+Plataforma que utilizei para realizar as tarefas do curso: **WPS SAS University Edition**
+
 Link do Curso: https://www.udemy.com/course/aprenda-sas-e-torne-se-um-ninja-dos-dados/learn/lecture/9331838#overview
 
