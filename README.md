@@ -1,5 +1,4 @@
 ![image](https://user-images.githubusercontent.com/70775662/117591257-0ebd2c00-b10a-11eb-9563-f33c4d6ef2af.png) 
-![image](https://user-images.githubusercontent.com/70775662/117591303-58a61200-b10a-11eb-9445-6ee01d29d7e7.png)
 
 
 ## Aprenda SAS e Seja um Ninja dos Dados
